@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  background-color: var(--bg-hero);
+  color: var(--just-white);
+}
+.hero h1 {
+  color: var(--just-white);
+}
+.hero::before {
+  position: absolute;
+  inset-block-end: 8rem;
+  background-repeat: no-repeat;
+  inline-size: 100%;
+  content: '';
+  background-image: url('../../assets/images/bg-pattern-intro-left-mobile.svg');
+  block-size: 28.125rem;
+}
+.hero::after {
+  position: absolute;
+  inset-block-end: 0;
+  background-repeat: no-repeat;
+  inline-size: 100%;
+  content: '';
+  background-image: url('../../assets/images/bg-pattern-intro-right-mobile.svg');
+  block-size: 28.125rem;
+  background-position: bottom right;
+}
+.hero__cover img {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  z-index: 100;
+}
+.hero__description {
+  padding-inline: 1.5rem;
+  padding-block: 5.75rem;
+  text-align: center;
+}
+.hero__description span {
+  display: block;
+}
+.hero__description p {
+  padding-block: 1rem 2rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero::before {
+    background-image: url('../../assets/images/bg-pattern-intro-right-desktop.svg');
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    background-position: right;
+  }
+  .hero::after {
+    background-image: url('../../assets/images/bg-pattern-intro-left-desktop.svg');
+    inset-block-end: -15rem;
+    block-size: 100%;
+    background-position: bottom left;
+  }
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'description cover';
+    column-gap: 1.875rem;
+    padding-block: 1rem;
+  }
+  .hero__cover {
+    position: relative;
+    grid-area: cover;
+    inset-block-start: 6.5625rem;
+  }
+  .hero__description {
+    grid-area: description;
+    align-self: center;
+    text-align: start;
+  }
+}

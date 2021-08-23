@@ -1,0 +1,22 @@
+.btn {
+  border: none;
+  background-color: unset;
+  color: #000;
+  padding-block: 0.75rem;
+  padding-inline: 1.75rem;
+  text-transform: uppercase;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.is-transparent {
+  background-color: unset;
+  color: var(--just-white);
+}
+.is-bordered {
+  border: 0.09375rem solid var(--just-white);
+}
+.is-white {
+  background-color: var(--just-white);
+  color: var(--just-dark);
+}

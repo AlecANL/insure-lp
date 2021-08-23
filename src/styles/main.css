@@ -1,7 +1,47 @@
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/button.css');
+@import url('./components/main.css');
+
+:root {
+  --bodybasefont: 'Karla', sans-serif;
+  --headlinesbasefont: 'DM Serif Display', serif;
+  --mobileMainHeadlineBold: 400 3rem / 3rem var(--headlinesbasefont);
+  --mobileBody1Regular: 400 1rem / 1.625rem var(--bodybasefont);
+  --mobileSecondHeadlineBold: 400 1.75rem / 2.375rem var(--headlinesbasefont);
+  --desktopMainHeadlineBold: 400 4.5rem / 4rem var(--headlinesbasefont);
+  --bg-hero: #2d2641;
+  --just-dark: #2c2830;
+  --just-white: #fff;
+  --just-gray: #837d88;
+}
+
 body {
   margin: 0;
+  font: var(--mobileBody1Regular);
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font: var(--mobileMainHeadlineBold);
+  margin: 0;
+  color: var(--just-dark);
 }
 .wrapper {
   max-inline-size: 1110px;
   margin: auto;
+}
+img {
+  max-inline-size: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font: var(--desktopMainHeadlineBold);
+  }
 }

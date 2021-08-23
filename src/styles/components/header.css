@@ -1,0 +1,14 @@
+@import url('./nav.css');
+.header {
+  padding-inline: 1.5rem;
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1000000;
+  background-color: var(--just-white);
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+}
