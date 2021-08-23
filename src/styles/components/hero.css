@@ -14,6 +14,8 @@
   content: '';
   background-image: url('../../assets/images/bg-pattern-intro-left-mobile.svg');
   block-size: 28.125rem;
+  z-index: 0;
+  pointer-events: none;
 }
 .hero::after {
   position: absolute;
@@ -24,6 +26,8 @@
   background-image: url('../../assets/images/bg-pattern-intro-right-mobile.svg');
   block-size: 28.125rem;
   background-position: bottom right;
+  z-index: 0;
+  pointer-events: none;
 }
 .hero__cover img {
   position: relative;

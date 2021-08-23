@@ -1,0 +1,45 @@
+.headline-container {
+  position: relative;
+  padding-block: 4.5rem;
+  padding-inline: 1.5rem;
+  background-color: var(--bg-hero);
+  text-align: center;
+  overflow: hidden;
+}
+.headline-container h3 {
+  color: var(--just-white);
+  font: var(--mobileThirdHeadlineBold);
+  margin-block-end: 2.5rem;
+}
+.headline-container::before {
+  position: absolute;
+  inset-block-start: 0;
+  background-image: url('../../assets/images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  inset-inline-end: 0;
+  background-position: right top;
+  inline-size: 100%;
+  block-size: 100%;
+  content: '';
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .headline-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    padding-block: 4.375rem;
+  }
+  .headline-container::before {
+    background-size: 50%;
+    background-image: url('../../assets/images/bg-pattern-how-we-work-desktop.svg');
+  }
+  .headline-container h3 {
+    font: var(--desktopThirdHeadline);
+  }
+  .headline-container span {
+    display: block;
+  }
+}

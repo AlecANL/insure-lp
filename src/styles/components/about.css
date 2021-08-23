@@ -1,7 +1,7 @@
 .about-container {
   text-align: center;
   padding-block: 8.75rem;
-  text-align: start;
+  /* text-align: start; */
 }
 .about-container hr {
   margin: 0;
@@ -21,7 +21,7 @@
   color: var(--just-gray);
   margin: 0;
 }
-.grid {
+.about-container .grid {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3.5rem;
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .grid {
+  .about-container .grid {
     grid-template-columns: 1fr 1fr;
     column-gap: 1.875rem;
   }
@@ -37,8 +37,9 @@
 @media screen and (min-width: 768px) {
   .about-container {
     margin-block-start: 9.375rem;
+    text-align: start;
   }
-  .grid {
+  .about-container .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .about-item {

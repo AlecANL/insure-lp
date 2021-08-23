@@ -1,5 +1,7 @@
 @import url('./about.css');
+@import url('./headline.css');
 
 .main-content {
   padding-inline: 1.5rem;
+  padding-block-end: 8.75rem;
 }

@@ -5,6 +5,9 @@
   padding-block: 0.75rem;
   padding-inline: 1.75rem;
   text-transform: uppercase;
+  z-index: 100;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 .btn:active {
   transform: scale(0.98);
@@ -12,6 +15,10 @@
 .is-transparent {
   background-color: unset;
   color: var(--just-white);
+}
+.is-transparent:hover {
+  background-color: var(--just-white);
+  color: var(--just-dark);
 }
 .is-bordered {
   border: 0.09375rem solid var(--just-white);
