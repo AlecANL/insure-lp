@@ -12,7 +12,9 @@
   --mobileSecondHeadlineBold: 400 1.75rem / 2.375rem var(--headlinesbasefont);
   --mobileThirdHeadlineBold: 400 2.5rem / 2.5rem var(--headlinesbasefont);
   --mobileSmallBold: 700 0.8125rem / 0.9375rem var(--bodybasefont);
+  --mobileLinkBold: 700 1.25rem / 2.5rem var(--bodybasefont);
   --desktopMainHeadlineBold: 400 4.5rem / 4rem var(--headlinesbasefont);
+  --desktopSmallBold: 700 0.8125rem / 0.9375rem var(--bodybasefont);
   --desktopThirdHeadline: 400 3.5rem / 3.5rem var(--headlinesbasefont);
   --bg-hero: #2d2641;
   --just-dark: #2c2830;
